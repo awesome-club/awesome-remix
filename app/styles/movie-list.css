@@ -1,0 +1,65 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+header {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 2px;
+}
+
+article h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 15px 0 0;
+  text-align: center;
+}
+
+article h4 {
+  margin: 5px 0 0;
+}
+
+article p {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+article a {
+  color: #000;
+  text-decoration: none;
+}
+
+article .cover {
+  position: relative;
+  width: 100%;
+}
+
+article .cover button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.ant-select {
+  width: 340px;
+}
+
