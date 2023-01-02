@@ -1,21 +1,21 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import movieListStyles from "~/styles/movie-list.css";
+import landingStyles from "~/styles/landing.css";
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "stylesheet", href: movieListStyles },
+    { rel: "stylesheet", href: landingStyles },
   ];
 };
 
 export default function Home() {
   return (
-  <section>
+  <section className="landing">
+    <img src="/book.jpeg" alt="book" />
     <h1>Read more in 2023</h1>
 
     <nav>
       <Link to={"/hardcover-fiction"}>
-        <label>Hardcover</label>
         <strong>Fiction</strong>
       </Link>
       <Link to={"/business-books"}>

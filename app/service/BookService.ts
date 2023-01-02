@@ -1,7 +1,7 @@
-export const BookApiKey = "6rXCxp1EOUUATuEBy1u8DrCW2SRciYBX";
+export const BookApiKey = "";
 export const BookApiPath = "https://api.nytimes.com/svc/books/v3";
 
-export const IsbnApiKey = "48993_658486d35ef1aa91f11841799c9a08db";
+export const IsbnApiKey = "";
 export const IsbnApiPath = "https://api2.isbndb.com";
 
 export interface ListDto {
@@ -40,7 +40,7 @@ export async function fetchList(name: string): Promise<BookDto[]> {
   );
   const data = await response.json();
   console.log(data);
-  return data.results.books;
+  return data?.results?.books ?? [];
 }
 
 export async function fetchListNames(): Promise<ListDto[]> {

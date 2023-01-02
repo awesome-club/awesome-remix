@@ -63,3 +63,21 @@ article .cover button {
   width: 340px;
 }
 
+@media (max-width: 600px) {
+  ul {
+    grid-template-columns: 100%;
+  }
+
+  article .cover {
+    width: 340px;
+  }
+
+  article img {
+    border-radius: 10px;
+    max-width: 340px;
+  }
+
+  article p {
+    max-width: 340px;
+  }
+}
